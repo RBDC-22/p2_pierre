@@ -1,0 +1,63 @@
+
+#reservia
+{
+    width: auto;
+    margin: auto;
+}
+body 
+{
+    display: block;
+    margin: 60px;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#logo img
+{
+    width:  120px;
+    height: 55px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+#tamere
+{
+    display: flex;
+    justify-content: space-around;
+}
+.liste_hebergements
+{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    width: 720px;
+}
+.hebergements
+{
+    display: inline-block;
+}
+.populaires
+{
+
+}
+#activites
+{
+    display: flex;
+}
+footer
+{
+    display: flex;
+    padding-top: 25px;
+}

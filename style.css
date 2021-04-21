@@ -1,7 +1,7 @@
 
 #reservia
 {
-    width: auto;
+    width: 950px;
     margin: auto;
 }
 body 
@@ -36,6 +36,7 @@ nav li
 {
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
 }
 .liste_hebergements
 {
@@ -50,7 +51,7 @@ nav li
 }
 .populaires
 {
-
+    
 }
 #activites
 {
@@ -59,5 +60,12 @@ nav li
 footer
 {
     display: flex;
-    padding-top: 25px;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+footer ul
+{
+    
+    
 }

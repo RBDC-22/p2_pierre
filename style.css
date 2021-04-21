@@ -36,14 +36,14 @@ nav li
 {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .liste_hebergements
 {
     flex-wrap: wrap;
     justify-content: space-between;
-    height: auto;
-    width: 720px;
+    height: 400px;
+    width: 900px;
 }
 .hebergements
 {
@@ -51,7 +51,8 @@ nav li
 }
 .populaires
 {
-    
+    display: flex;
+    flex-direction: column;
 }
 #activites
 {

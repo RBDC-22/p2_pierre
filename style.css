@@ -37,13 +37,15 @@ nav li
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    height: 800px;
+    width: 900px;
 }
 .liste_hebergements
 {
     flex-wrap: wrap;
     justify-content: space-between;
     height: 400px;
-    width: 900px;
+    width: 600px;
 }
 .hebergements
 {
@@ -57,6 +59,13 @@ nav li
 #activites
 {
     display: flex;
+    height: 400px;
+    width: 600px;
+    align-items: flex-start;
+}
+.activite
+{
+    display: inline-block;
 }
 footer
 {
@@ -64,6 +73,7 @@ footer
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
+    background-color: gray;
 }
 footer ul
 {

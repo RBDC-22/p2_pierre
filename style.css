@@ -1,13 +1,13 @@
 
 #reservia
 {
-    width: 950px;
+    width: 100%;
     margin: auto;
 }
 body 
 {
     display: block;
-    margin: 60px;
+    margin: 0%;
 }
 header
 {
@@ -29,7 +29,7 @@ nav ul
 
 nav li
 {
-    margin-right: 15px;
+    margin-right: 1%;
 }
 
 #tamere
@@ -37,31 +37,37 @@ nav li
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    height: 800px;
-    width: 900px;
+    height: 100%;
+    width: 100%;
 }
 .liste_hebergements
 {
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 400px;
-    width: 600px;
+    align-items: flex-start;
+    height: 50%;
+    width: 70%;
 }
 .hebergements
 {
     display: inline-block;
+    height: 50%;
+    width: 33%;
+
 }
 .populaires
 {
     display: flex;
     flex-direction: column;
+
 }
 #activites
 {
     display: flex;
-    height: 400px;
-    width: 600px;
     align-items: flex-start;
+    height: 50%;
+    width: 100%;
+    justify-content: space-between;
 }
 .activite
 {

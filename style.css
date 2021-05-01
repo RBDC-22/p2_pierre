@@ -1,117 +1,168 @@
 
-#reservia
-{
-    width: 100%;
-    margin: auto;
-}
-img 
-{
-    max-width: 100%;
-    max-height: 100%;
-}
-body 
-{
-    display: block;
-    margin: 0%;
-}
-header
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-#logo img
-{
-    width:  120px;
-    height: 55px;
-}
-
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-}
-
-nav li
-{
-    margin-right: 1%;
-}
-
-#partie1
-{
-    display: flex;
+    #reservia
+    {
+        padding: 0 30px 10px 30px;
+        margin: 5%;
+    }
     
-    align-items: flex-start;
-    height: 100%;
-    width: 100%;
-}
-#titre_principal
-{
-    display: flex;
-    align-items: flex-start;
-}
-.titre1
-{
-    width: 70%;
-    height: 10%;
-}
-.titre2
-{
-    width: 30%;
-    height: 10%;
-}
-#liste_hebergements
-{
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 100%;
-    width: 70%;
-}
-.hebergements
-{
-    display: inline-block;
-    height: 70%;
-    width: 33%;
 
-}
-.populaires
-{
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 30%;
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    #logo img
+    {
+        width:  120px;
+        height: 55px;
+    }
 
-}
-.titre3
-{
-    width: 100%;
-}
-#activites
-{
-    display: flex;
-    align-items: flex-start;
-    height: 50%;
-    width: 100%;
-    justify-content: space-between;
-}
-.activite
-{
-    display: inline-block;
-    height: 50%;
-    width: 100%;
+    nav ul
+    {   
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav li
+    {
+        margin-right: 5%;
+        border-radius: 30px;
+    }
+    .topnav
+    {
+        display: inline;
+    }
+    button
+    {
+        border-radius: 30px;
+    }
+    #partie1
+    {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    }
+    #liste_hebergements
+    {
+        height: 100%;
+        width: 60%;
+        background-color: #F2F2F2;
+        border-radius: 30px;
+    }
+    .hebergements
+    {   
+        display: inline-block;
+        margin-left: 5%;
+        height: 40%;
+        width: 26%;
+        background-color: white;
+        border: solid;
+        border-radius: 30px;
+
+    }
+    .hebergements img
+    {
+        justify-items: center;
+        width: 150px;
+        height: 100px; 
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .populaires
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 35%;
+        background-color: #F2F2F2;
+        border-radius: 30px;
+    }
+    .populaire
+    {
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 80%;
+        background-color: white;
+        display: grid;
+        border: solid;
+        border-radius: 30px;
+    }
+    .populaire img
+    {
+        grid-column: 1;
+        width: 150px;
+        height: 100px;
+        justify-self: center;
+        overflow: hidden;
+        object-fit: cover;
+        
+    }
+    .populaire h2,p
+    {
+        grid-column: 2;
+    }
+    .rating 
+    {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+    }
+    .rating > span 
+    {
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+    }
+    .rating > span:hover:before,
+    .rating > span:hover ~ span:before 
+    {
+         content: "\2605";
+         position: absolute;
+    }
+    .titre3
+    {
+        width: 100%;
+    }
+    #activites
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+    }
+    .activite
+    {
+        display: inline-block;
+        height: 50%;
+        width: 100%;
+        
+    }
+
+    .activite1 img
+    {
+        width: 350px;
+        height: 500px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 30px;
+        
+    }
+    .activite2 img
+    {
+        width: 250px;
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 30px;
+        
+    }
     
-}
-footer
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
-    background-color: gray;
-}
-footer ul
-{
-    
-    
-}
+    footer
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        background-color: #F2F2F2;
+    }

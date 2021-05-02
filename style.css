@@ -1,11 +1,12 @@
-
+/* appel des fonctions de pour le corps */
     #reservia
     {
+        font-family: 'Raleway', sans-serif;
         padding: 0 30px 10px 30px;
         margin: 5%;
     }
     
-
+/*parametrage header ainsi que des boutons redirection / accès rapide / fonction recherche  via fonction flexbox*/
     header
     {
         display: flex;
@@ -37,89 +38,121 @@
     {
         border-radius: 30px;
     }
+    #filtres
+    {
+        margin-top: 1%;
+    }
+    #informations
+    {
+        margin-top: 1%;
+    }
+    /*parametrage taille police*/
+    h1
+    {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    h2
+    {
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+    /* parametrage div hebergement de *ville* / div populaires via fonction flexbox*/
     #partie1
     {
+        margin-top: 1%;
         display: flex;
         justify-content: space-between;
-        height: 100%;
-        width: 100%;
     }
-    #liste_hebergements
+    
+    
+/*parametrage gestion div hebergements via fonction flex box*/
+    .titre1
+    {
+        margin-left: 5%;
+        display: flex;
+    }
+    .liste_hebergements
     {
         height: 100%;
-        width: 60%;
+        width: 65%;
         background-color: #F2F2F2;
         border-radius: 30px;
     }
     .hebergements
     {   
         display: inline-block;
+        margin-bottom: 1.5%;
         margin-left: 5%;
         height: 40%;
         width: 26%;
         background-color: white;
-        border: solid;
         border-radius: 30px;
 
     }
     .hebergements img
     {
         justify-items: center;
-        width: 150px;
-        height: 100px; 
+        width: 100%;
+        height: 150px; 
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         overflow: hidden;
         object-fit: cover;
+    }
+/*parametrage gestion div populaires via fonction grid*/
+    .titre2
+    {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
     }
     .populaires
     {
         display: flex;
         flex-direction: column;
-        height: 100%;
-        width: 35%;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
         background-color: #F2F2F2;
         border-radius: 30px;
     }
     .populaire
     {
-        margin-left: 10%;
-        margin-top: 5%;
+        display: grid;
         width: 80%;
         background-color: white;
-        display: grid;
-        border: solid;
         border-radius: 30px;
+        margin-bottom: 1.5%;
     }
+    
     .populaire img
     {
         grid-column: 1;
-        width: 150px;
-        height: 100px;
-        justify-self: center;
+        grid-row: 1;
+        width: 100%;
+        height: 150px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        justify-self: flex-start;
         overflow: hidden;
         object-fit: cover;
         
     }
-    .populaire h2,p
+    .populaire h2
     {
         grid-column: 2;
+        grid-row: 1;
+        margin-top: 8%;
     }
-    .rating 
+    .populaire p
     {
-        unicode-bidi: bidi-override;
-        direction: rtl;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 33%;
     }
-    .rating > span 
-    {
-        display: inline-block;
-        position: relative;
-        width: 1.1em;
-    }
-    .rating > span:hover:before,
-    .rating > span:hover ~ span:before 
-    {
-         content: "\2605";
-         position: absolute;
-    }
+/*parametrage div activite via fonction flexbox*/
     .titre3
     {
         width: 100%;
@@ -141,28 +174,35 @@
 
     .activite1 img
     {
-        width: 350px;
+        width: 98%;
         height: 500px;
         overflow: hidden;
         object-fit: cover;
-        border-radius: 30px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         
     }
     .activite2 img
     {
-        width: 250px;
-        height: 200px;
+        width: 98%;
+        height: 228px;
         overflow: hidden;
         object-fit: cover;
-        border-radius: 30px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         
     }
-    
+/*parametrage footer via fonction flex box*/
     footer
     {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
         width: 100%;
         background-color: #F2F2F2;
     }
+    li
+    {
+        list-style-type: none
+    }
+    
+    @media screen and (max-width: 904px)

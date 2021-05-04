@@ -1,12 +1,17 @@
-/* appel des fonctions de pour le corps */
-    #reservia
+/* -------------------------------------------------------------------------------------------------------------------
+ appel des fonctions de pour le corps */
+    body
     {
         font-family: 'Raleway', sans-serif;
+    }
+    #reservia
+    {
         padding: 0 30px 10px 30px;
-        margin: 5%;
+        display: flexbox;
     }
     
-/*parametrage header ainsi que des boutons redirection / accès rapide / fonction recherche  via fonction flexbox*/
+/* -------------------------------------------------------------------------------------------------------------------
+parametrage header via fonction flexbox*/
     header
     {
         display: flex;
@@ -15,38 +20,120 @@
     }
     #logo img
     {
-        width:  120px;
-        height: 55px;
+        width:  50%;
     }
-
-    nav ul
-    {   
-        list-style-type: none;
-        display: flex;
-    }
-
-    nav li
+    nav
     {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10%;
+        align-items: flex-end;
+        height: 7em;
         margin-right: 5%;
-        border-radius: 30px;
+    }
+    nav a:hover
+    {
+        border-top: 2px solid;
+        border-color: #0065FC;
+        padding-top: 6em;
+        color: #0065FC;
+    }
+    /* -------------------------------------------------------------------------------------------------------------------
+parametrage fonction recherche  via fonction flexbox*/
+    #titre_secondaire
+    {
+        margin-bottom: 1%;
+    }
+    .fa-map-marker-alt:before
+    {
+        background: #F2F2F2;
+        padding: 5px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
     .topnav
-    {
+    {   
+        justify-content: space-between;
+        padding: 10px;
         display: inline;
+        margin-top: 2%;
     }
-    button
+    input[type="text" i] 
     {
-        border-radius: 30px;
+        padding: 5px 3px;
+        border: hidden;
+    }
+    .topnav button 
+    {
+        color: rgb(255, 253, 253);
+        background-color: #0065FC;
+        padding: 5px 6px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border: hidden;
     }
     #filtres
     {
         margin-top: 1%;
     }
+    .filtres button
+    {
+        color: black;
+        background-color:white;
+        padding: 10px;
+        padding-left: unset;
+        border-radius: 30px;
+        border-color: #DEEBFF;
+        border-style: solid;
+    }
+    .fa-money-bill-wave-alt:before 
+    {
+        background: #DEEBFF;
+        padding: 10px;
+        color: #0065FC;
+        border-color: #DEEBFF;
+        border-radius: 30px;
+    }
+    .fa-child:before 
+    {
+        background: #DEEBFF;
+        padding: 10px;
+        color: #0065FC;
+        border-color: #DEEBFF;
+        border-radius: 30px;
+    }
+    .fa-heart:before 
+    {
+        background: #DEEBFF;
+        padding: 10px;
+        color: #0065FC;
+        border-color: #DEEBFF;
+        border-radius: 30px;
+    }
+    .fa-dog:before 
+    {
+        background: #DEEBFF;
+        padding: 10px;
+        color: #0065FC;
+        border-color: #DEEBFF;
+        border-radius: 30px;
+    }
     #informations
     {
         margin-top: 1%;
+        display: inline-flex;
+        align-items: baseline;
     }
-    /*parametrage taille police*/
+    .fa-info-circle:before 
+    {
+        background: #0065FC;
+        color: white;
+        border-radius: 60px;
+        border-color: #DEEBFF;
+        border-style: solid 2px ;
+    }
+/* -----------------------------------------------------------------------------------------------
+parametrage taille police boutons*/
     h1
     {
         font-size: 1.2em;
@@ -54,10 +141,22 @@
     }
     h2
     {
+        padding-left: 2em;
         font-size: 0.9em;
         font-weight: bold;
     }
-    /* parametrage div hebergement de *ville* / div populaires via fonction flexbox*/
+    li
+    {
+        color:#181818;
+        list-style-type: none
+    }
+    a:-webkit-any-link {
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+    }
+/* -----------------------------------------------------------------------------------------------
+parametrage div hebergement de *ville* / div populaires via fonction flexbox*/
     #partie1
     {
         margin-top: 1%;
@@ -66,7 +165,8 @@
     }
     
     
-/*parametrage gestion div hebergements via fonction flex box*/
+/* ---------------------------------------------------------------------------------------------------
+parametrage gestion div hebergements via fonction flex box*/
     .titre1
     {
         margin-left: 5%;
@@ -74,7 +174,7 @@
     }
     .liste_hebergements
     {
-        height: 100%;
+        height: auto;
         width: 65%;
         background-color: #F2F2F2;
         border-radius: 30px;
@@ -82,10 +182,11 @@
     .hebergements
     {   
         display: inline-block;
+        align-content: center;
         margin-bottom: 1.5%;
         margin-left: 5%;
-        height: 40%;
-        width: 26%;
+        height: 35%;
+        width: 27%;
         background-color: white;
         border-radius: 30px;
 
@@ -93,14 +194,34 @@
     .hebergements img
     {
         justify-items: center;
-        width: 100%;
-        height: 150px; 
+        width: 95%;
+        height: 100px; 
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
+        border: 5px;
+        border-style: solid;
+        border-color: white;
         overflow: hidden;
         object-fit: cover;
     }
-/*parametrage gestion div populaires via fonction grid*/
+    .hebergements h2
+    {
+        margin-top: 0%;
+        padding-left: 1em;
+    }
+    .hebergements p
+    {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-left: 1em;
+    }
+    .more
+    {
+        margin-top: 3%;
+        margin-left: 2.5%;
+    }
+/*------------------------------------------------------------------------------------------------------------
+parametrage gestion div populaires via fonction grid*/
     .titre2
     {
         width: 80%;
@@ -121,6 +242,8 @@
     .populaire
     {
         display: grid;
+        grid-template-columns: 40% 55%;
+        grid-gap: 10px;
         width: 80%;
         background-color: white;
         border-radius: 30px;
@@ -135,6 +258,9 @@
         height: 150px;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
+        border: 5px;
+        border-style: solid;
+        border-color: white;
         justify-self: flex-start;
         overflow: hidden;
         object-fit: cover;
@@ -145,6 +271,7 @@
         grid-column: 2;
         grid-row: 1;
         margin-top: 8%;
+        padding-left: 0%;
     }
     .populaire p
     {
@@ -152,7 +279,8 @@
         grid-row: 1;
         margin-top: 33%;
     }
-/*parametrage div activite via fonction flexbox*/
+/* ----------------------------------------------------------------------------------------------------------------------
+parametrage div activite via fonction flexbox*/
     .titre3
     {
         width: 100%;
@@ -160,21 +288,22 @@
     #activites
     {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
-        
-    }
-    .activite
-    {
-        display: inline-block;
-        height: 50%;
         width: 100%;
         
+        
+    }
+    .activite1
+    {
+        border-radius: 20px;
+        width: 24%;
+        box-shadow: 0 8px 6px -6px black;
     }
 
     .activite1 img
     {
-        width: 98%;
+        width: 100%;
         height: 500px;
         overflow: hidden;
         object-fit: cover;
@@ -182,9 +311,13 @@
         border-top-right-radius: 30px;
         
     }
+    .activite2
+    {
+        width: 24%;
+    }
     .activite2 img
     {
-        width: 98%;
+        width: 100%;
         height: 228px;
         overflow: hidden;
         object-fit: cover;
@@ -192,17 +325,140 @@
         border-top-right-radius: 30px;
         
     }
-/*parametrage footer via fonction flex box*/
+    .activite2 h2
+    {
+        overflow: hidden;
+        border-radius: 30px;
+        box-shadow: 0 8px 6px -6px black;
+        padding-bottom: 0.5em;
+    }
+/* --------------------------------------------------------------------------------------------------------------
+parametrage footer via fonction flex box*/
     footer
     {
         display: flex;
+        align-items: flex-start;
         justify-content: space-between;
-        width: 100%;
+        padding-right: 18%;
         background-color: #F2F2F2;
     }
-    li
+    .footreservia h2, ul
     {
-        list-style-type: none
+        padding-left: 1em;
     }
-    
-    @media screen and (max-width: 904px)
+/*--------------------------------------------------------------------------------------------------------------------
+version mobile tous modèles*/
+@media screen and (max-width: 1280px)
+{
+    #reservia
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-size: 150%;
+    }
+    #partie1
+    {
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+    .liste_hebergements
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        background-color: white;
+        border-radius: 30px;
+    }
+    .hebergements
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .hebergements img
+    {
+        width: 95%;
+        height: 220px; 
+    }
+    .populaires
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #F2F2F2;
+        border-radius: 30px;
+    }
+    .populaire
+    {
+        width: 95%;
+        height: fit-content;
+    }
+    .populaire h2
+    {
+        margin-top: 8%; 
+    }
+    .populaire p
+    {
+        margin-top: 15%;
+    }
+    #activites
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        
+    }
+    .activite1
+    {
+        border-radius: 20px;
+        width: 85%;
+        box-shadow: 0 8px 6px -6px black;
+    }
+
+    .activite1 img
+    {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        object-fit: cover;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        
+    }
+    .activite2
+    {
+        width: 85%;
+    }
+    .activite2 img
+    {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        object-fit: cover;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0%;
+        height: auto;
+        width: 100%;
+    }
+    .footreservia
+    {
+        width: 85%;
+        align-self: center;
+        align-items: stretch;
+    }
+}

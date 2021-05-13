@@ -7,11 +7,12 @@
     #reservia
     {
         padding: 0 30px 10px 30px;
-        display: flexbox;
+        display: flex;
+        flex-direction: column;
     }
     
 /* -------------------------------------------------------------------------------------------------------------------
-parametrage header via fonction flexbox*/
+parametrage header via fonction flexboxet grid */
     header
     {
         display: flex;
@@ -22,45 +23,52 @@ parametrage header via fonction flexbox*/
     {
         width:  50%;
     }
-    nav
-    {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        column-gap: 10%;
-        align-items: flex-end;
-        height: 7em;
-        margin-right: 5%;
-    }
-    nav a:hover
-    {
-        border-top: 2px solid;
-        border-color: #0065FC;
-        padding-top: 6em;
-        color: #0065FC;
-    }
+    
+        nav
+        {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 10%;
+            align-items: flex-end;
+            height: 7em;
+            margin-right: 5%;
+        }
+        
+        nav a:hover
+        {
+            border-top: 2px solid;
+            border-color: #0065FC;
+            padding-top: 6.1em;
+            color: #0065FC;
+        }
+    
     /* -------------------------------------------------------------------------------------------------------------------
 parametrage fonction recherche  via fonction flexbox*/
-    #titre_secondaire
+    .titre_secondaire
     {
         margin-bottom: 1%;
+        display: flex;
+        flex-direction: column;
     }
     .fa-map-marker-alt:before
     {
         background: #F2F2F2;
-        padding: 5px;
+        padding: 5px 7px;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
     }
     .topnav
     {   
-        justify-content: space-between;
         padding: 10px;
-        display: inline;
-        margin-top: 2%;
+        display: inline-flex;
+        align-items: baseline;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     input[type="text" i] 
     {
-        padding: 5px 3px;
+        font-size: 1.15em;
+        height: 100%;
         border: hidden;
     }
     .topnav button 
@@ -72,8 +80,15 @@ parametrage fonction recherche  via fonction flexbox*/
         border-bottom-right-radius: 30px;
         border: hidden;
     }
-    #filtres
+    .fa-search
     {
+        display: none;
+        padding: 10px;
+    }
+    .filtres
+    {
+        display: inline-flex;
+        justify-content: flex-start;
         margin-top: 1%;
     }
     .filtres button
@@ -85,11 +100,12 @@ parametrage fonction recherche  via fonction flexbox*/
         border-radius: 30px;
         border-color: #DEEBFF;
         border-style: solid;
+        margin-left: 1em;
     }
     .fa-money-bill-wave-alt:before 
     {
         background: #DEEBFF;
-        padding: 10px;
+        padding: 13px;
         color: #0065FC;
         border-color: #DEEBFF;
         border-radius: 30px;
@@ -97,7 +113,7 @@ parametrage fonction recherche  via fonction flexbox*/
     .fa-child:before 
     {
         background: #DEEBFF;
-        padding: 10px;
+        padding: 13px;
         color: #0065FC;
         border-color: #DEEBFF;
         border-radius: 30px;
@@ -105,7 +121,7 @@ parametrage fonction recherche  via fonction flexbox*/
     .fa-heart:before 
     {
         background: #DEEBFF;
-        padding: 10px;
+        padding: 13px;
         color: #0065FC;
         border-color: #DEEBFF;
         border-radius: 30px;
@@ -113,7 +129,7 @@ parametrage fonction recherche  via fonction flexbox*/
     .fa-dog:before 
     {
         background: #DEEBFF;
-        padding: 10px;
+        padding: 13px;
         color: #0065FC;
         border-color: #DEEBFF;
         border-radius: 30px;
@@ -141,7 +157,6 @@ parametrage taille police boutons*/
     }
     h2
     {
-        padding-left: 2em;
         font-size: 0.9em;
         font-weight: bold;
     }
@@ -154,6 +169,12 @@ parametrage taille police boutons*/
         color: black;
         cursor: pointer;
         text-decoration: none;
+    }
+    .fa-star
+    {
+        color: #0065FC;
+        width: 0.75em;
+        padding-right: 0.5em;
     }
 /* -----------------------------------------------------------------------------------------------
 parametrage div hebergement de *ville* / div populaires via fonction flexbox*/
@@ -172,30 +193,38 @@ parametrage gestion div hebergements via fonction flex box*/
         margin-left: 5%;
         display: flex;
     }
-    .liste_hebergements
+    #liste_hebergements
     {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         height: auto;
         width: 65%;
         background-color: #F2F2F2;
         border-radius: 30px;
+    }
+    .titre1
+    {
+        width: 100%;
     }
     .hebergements
     {   
         display: inline-block;
         align-content: center;
         margin-bottom: 1.5%;
-        margin-left: 5%;
-        height: 35%;
+        height: auto;
         width: 27%;
         background-color: white;
         border-radius: 30px;
+        border-radius: 20px;
+        box-shadow: 0 8px 6px -6px rgb(78, 77, 77);
 
     }
     .hebergements img
     {
         justify-items: center;
         width: 95%;
-        height: 100px; 
+        height: 150px; 
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         border: 5px;
@@ -208,17 +237,24 @@ parametrage gestion div hebergements via fonction flex box*/
     {
         margin-top: 0%;
         padding-left: 1em;
+        margin: inherit;
     }
     .hebergements p
     {
         margin-top: 0%;
         margin-bottom: 0%;
         padding-left: 1em;
+        padding-top: 1%;
     }
     .more
     {
+        width: 100%;
         margin-top: 3%;
         margin-left: 2.5%;
+    }
+    .rating
+    {
+        padding-left: 5%;
     }
 /*------------------------------------------------------------------------------------------------------------
 parametrage gestion div populaires via fonction grid*/
@@ -277,6 +313,12 @@ parametrage gestion div populaires via fonction grid*/
     {
         grid-column: 2;
         grid-row: 1;
+        margin-top: 20%;
+    }
+    .ratingpop
+    {
+        grid-column: 2;
+        grid-row: 1;
         margin-top: 33%;
     }
 /* ----------------------------------------------------------------------------------------------------------------------
@@ -291,7 +333,8 @@ parametrage div activite via fonction flexbox*/
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        
+        align-content: baseline;
+        margin-bottom: 1%;
         
     }
     .activite1
@@ -304,7 +347,7 @@ parametrage div activite via fonction flexbox*/
     .activite1 img
     {
         width: 100%;
-        height: 500px;
+        height: 520px;
         overflow: hidden;
         object-fit: cover;
         border-top-left-radius: 30px;
@@ -314,6 +357,9 @@ parametrage div activite via fonction flexbox*/
     .activite2
     {
         width: 24%;
+        border-radius: 30px;
+        box-shadow: 0 8px 6px -6px black;
+
     }
     .activite2 img
     {
@@ -325,12 +371,12 @@ parametrage div activite via fonction flexbox*/
         border-top-right-radius: 30px;
         
     }
-    .activite2 h2
+    .titr_activite2
     {
         overflow: hidden;
         border-radius: 30px;
         box-shadow: 0 8px 6px -6px black;
-        padding-bottom: 0.5em;
+        padding-bottom: 1em;
     }
 /* --------------------------------------------------------------------------------------------------------------
 parametrage footer via fonction flex box*/
@@ -353,9 +399,51 @@ version mobile tous modèles*/
     #reservia
     {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
         justify-content: center;
         font-size: 150%;
+    }
+    header
+    {
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 150px 150px;
+        
+    }
+    #logo
+    {
+        width: 60%;
+    }
+    nav 
+    {
+        display: unset;
+    }
+    nav li a [href="#liste_hebergements"]
+    {
+        grid-area: 2/1;
+    }
+    nav li a [href="#activites"]
+    {
+        grid-area: 2/2;
+    }
+    nav li a [href="inscrire"]
+    {
+        grid-area: 1/2;
+    }
+    .topnav button
+    {
+        display: none;
+    }
+    .fa-search
+    {
+        display: inline;
+
+    }
+    .filtres
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
     }
     #partie1
     {
@@ -363,7 +451,7 @@ version mobile tous modèles*/
         display: flex;
         flex-direction: column;
     }
-    .liste_hebergements
+    #liste_hebergements
     {
         display: flex;
         flex-direction: column;
@@ -376,11 +464,13 @@ version mobile tous modèles*/
     .hebergements
     {
         width: 100%;
-        height: 100%;
+        height: 330px;
+        border-radius: 30px;
+        box-shadow: 0 8px 6px -6px black;
     }
     .hebergements img
     {
-        width: 95%;
+        width: 100%;
         height: 220px; 
     }
     .populaires
@@ -421,6 +511,7 @@ version mobile tous modèles*/
         border-radius: 20px;
         width: 85%;
         box-shadow: 0 8px 6px -6px black;
+        margin-bottom: 1em;
     }
 
     .activite1 img
@@ -431,11 +522,11 @@ version mobile tous modèles*/
         object-fit: cover;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        
     }
     .activite2
     {
         width: 85%;
+        margin-bottom: 1em;
     }
     .activite2 img
     {

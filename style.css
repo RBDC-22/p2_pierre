@@ -1,78 +1,60 @@
-/* -------------------------------------------------------------------------------------------------------------------
- appel des fonctions de pour le corps */
-    body
-    {
+    /* -------------------------------------------------------------------------------------------------------------------
+    appel des fonctions de pour le corps */
+    body{
         font-family: 'Raleway', sans-serif;
     }
-    #reservia
-    {
+    #reservia{
         padding: 0 30px 10px 30px;
         display: flex;
         flex-direction: column;
     }
-    
-/* -------------------------------------------------------------------------------------------------------------------
-parametrage header via fonction flexboxet grid */
-    header
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    #logo img
-    {
-        width:  50%;
-    }
-    
-        nav
-        {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            column-gap: 10%;
-            align-items: flex-end;
-            height: 7em;
-            margin-right: 5%;
-        }
-        
-        nav a:hover
-        {
-            border-top: 2px solid;
-            border-color: #0065FC;
-            padding-top: 6.1em;
-            color: #0065FC;
-        }
-    
     /* -------------------------------------------------------------------------------------------------------------------
-parametrage fonction recherche  via fonction flexbox*/
-    .titre_secondaire
-    {
-        margin-bottom: 1%;
+    parametrage header via fonction flexboxet grid */
+    header{
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo img{
+        width: 50%;
+        }
+    li a{
+        margin-right: 1em;
+    }
+    li a:hover {
+        border-top: 2px solid;
+        border-color: #0065FC;
+        color: #0065FC;
+        padding-top: 2em;
+    }
+    #nav1{
+        margin-left: 45%;
+    }
+        /* -------------------------------------------------------------------------------------------------------------------
+    parametrage fonction recherche  via fonction flexbox*/
+    .titre_secondaire {
+        margin-top: 1em;
         display: flex;
         flex-direction: column;
     }
-    .fa-map-marker-alt:before
-    {
+    .fa-map-marker-alt:before {
         background: #F2F2F2;
         padding: 5px 7px;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
     }
-    .topnav
-    {   
+    .topnav {   
         padding: 10px;
         display: inline-flex;
         align-items: baseline;
         margin-top: 1em;
-        margin-bottom: 1em;
     }
-    input[type="text" i] 
-    {
+    input[type="text" i] {
         font-size: 1.15em;
         height: 100%;
         border: hidden;
     }
-    .topnav button 
-    {
+    .topnav button {
         color: rgb(255, 253, 253);
         background-color: #0065FC;
         padding: 5px 6px;
@@ -80,88 +62,86 @@ parametrage fonction recherche  via fonction flexbox*/
         border-bottom-right-radius: 30px;
         border: hidden;
     }
-    .fa-search
-    {
+    .fa-search {
         display: none;
         padding: 10px;
     }
-    .filtres
-    {
+    .filtres {
         display: inline-flex;
         justify-content: flex-start;
-        margin-top: 1%;
+        align-items: baseline ;
     }
-    .filtres button
-    {
+    .filtres button {
         color: black;
         background-color:white;
-        padding: 10px;
+        height: 40px;
         padding-left: unset;
         border-radius: 30px;
         border-color: #DEEBFF;
         border-style: solid;
         margin-left: 1em;
     }
-    .fa-money-bill-wave-alt:before 
-    {
+    .fa-money-bill-wave-alt:before {
+        background: #DEEBFF;
+        padding: 10px;
+        color: #0065FC;
+        border-color: #DEEBFF;
+        border-radius: 30px;
+        margin-right: 0.5em;
+    }
+    .fa-child:before {
         background: #DEEBFF;
         padding: 13px;
         color: #0065FC;
         border-color: #DEEBFF;
         border-radius: 30px;
+        margin-right: 0.5em;
     }
-    .fa-child:before 
-    {
+    .fa-heart:before {
         background: #DEEBFF;
         padding: 13px;
         color: #0065FC;
         border-color: #DEEBFF;
         border-radius: 30px;
+        margin-right: 0.5em;
     }
-    .fa-heart:before 
-    {
+    .fa-dog:before {
         background: #DEEBFF;
         padding: 13px;
         color: #0065FC;
         border-color: #DEEBFF;
         border-radius: 30px;
+        margin-right: 0.5em;
     }
-    .fa-dog:before 
-    {
-        background: #DEEBFF;
-        padding: 13px;
-        color: #0065FC;
-        border-color: #DEEBFF;
-        border-radius: 30px;
-    }
-    #informations
-    {
-        margin-top: 1%;
+    #informations {
         display: inline-flex;
         align-items: baseline;
+        margin-right: 0.5em;
     }
-    .fa-info-circle:before 
-    {
+    .fa-info-circle:before {
         background: #0065FC;
         color: white;
         border-radius: 60px;
         border-color: #DEEBFF;
         border-style: solid 2px ;
+        margin-right: 0.5em;
     }
-/* -----------------------------------------------------------------------------------------------
-parametrage taille police boutons*/
-    h1
-    {
+    /* -----------------------------------------------------------------------------------------------
+    parametrage taille police boutons*/
+    h1 {
         font-size: 1.2em;
         font-weight: bold;
+        margin-bottom: unset;
     }
-    h2
-    {
-        font-size: 0.9em;
+    h2 {
+        font-size: 1.5em;
         font-weight: bold;
+    } 
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: unset;
     }
-    li
-    {
+    li {
         color:#181818;
         list-style-type: none
     }
@@ -170,31 +150,26 @@ parametrage taille police boutons*/
         cursor: pointer;
         text-decoration: none;
     }
-    .fa-star
-    {
+    .fa-star {
         color: #0065FC;
-        width: 0.75em;
-        padding-right: 0.5em;
+        width: 0.4em;
+        padding-right: 0.7em;
+        margin-bottom: 0.5em;
     }
-/* -----------------------------------------------------------------------------------------------
-parametrage div hebergement de *ville* / div populaires via fonction flexbox*/
-    #partie1
-    {
-        margin-top: 1%;
+    /* -----------------------------------------------------------------------------------------------
+    parametrage div hebergement de *ville* / div populaires via fonction flexbox*/
+    #partie1 {
+        margin-top: 1em;
         display: flex;
         justify-content: space-between;
-    }
-    
-    
-/* ---------------------------------------------------------------------------------------------------
-parametrage gestion div hebergements via fonction flex box*/
-    .titre1
-    {
+    } 
+    /* ---------------------------------------------------------------------------------------------------
+    parametrage gestion div hebergements via fonction flex box*/
+    .titre1 {
         margin-left: 5%;
         display: flex;
     }
-    #liste_hebergements
-    {
+    #liste_hebergements {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -203,12 +178,10 @@ parametrage gestion div hebergements via fonction flex box*/
         background-color: #F2F2F2;
         border-radius: 30px;
     }
-    .titre1
-    {
+    .titre1 {
         width: 100%;
     }
-    .hebergements
-    {   
+    .hebergements{   
         display: inline-block;
         align-content: center;
         margin-bottom: 1.5%;
@@ -218,10 +191,8 @@ parametrage gestion div hebergements via fonction flex box*/
         border-radius: 30px;
         border-radius: 20px;
         box-shadow: 0 8px 6px -6px rgb(78, 77, 77);
-
     }
-    .hebergements img
-    {
+    .hebergements img {
         justify-items: center;
         width: 95%;
         height: 150px; 
@@ -233,40 +204,32 @@ parametrage gestion div hebergements via fonction flex box*/
         overflow: hidden;
         object-fit: cover;
     }
-    .hebergements h2
-    {
+    .hebergements h3 {
         margin-top: 0%;
-        padding-left: 1em;
-        margin: inherit;
+        padding-left: 5%;
     }
-    .hebergements p
-    {
-        margin-top: 0%;
-        margin-bottom: 0%;
-        padding-left: 1em;
-        padding-top: 1%;
+    .hebergements p {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding-left: 5%;
     }
-    .more
-    {
+    .more {
         width: 100%;
         margin-top: 3%;
         margin-left: 2.5%;
     }
-    .rating
-    {
+    .rating {
         padding-left: 5%;
     }
-/*------------------------------------------------------------------------------------------------------------
-parametrage gestion div populaires via fonction grid*/
-    .titre2
-    {
+    /*------------------------------------------------------------------------------------------------------------
+    parametrage gestion div populaires via fonction grid*/
+    .titre2 {
         width: 80%;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
     }
-    .populaires
-    {
+    .populaires {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -275,8 +238,7 @@ parametrage gestion div populaires via fonction grid*/
         background-color: #F2F2F2;
         border-radius: 30px;
     }
-    .populaire
-    {
+    .populaire {
         display: grid;
         grid-template-columns: 40% 55%;
         grid-gap: 10px;
@@ -284,10 +246,9 @@ parametrage gestion div populaires via fonction grid*/
         background-color: white;
         border-radius: 30px;
         margin-bottom: 1.5%;
+        box-shadow: 0 8px 6px -6px #6e6969;
     }
-    
-    .populaire img
-    {
+    .populaire img {
         grid-column: 1;
         grid-row: 1;
         width: 100%;
@@ -300,181 +261,214 @@ parametrage gestion div populaires via fonction grid*/
         justify-self: flex-start;
         overflow: hidden;
         object-fit: cover;
-        
     }
-    .populaire h2
-    {
+    .populaire h3 {
         grid-column: 2;
         grid-row: 1;
         margin-top: 8%;
-        padding-left: 0%;
     }
-    .populaire p
-    {
+    .populaire p {
         grid-column: 2;
         grid-row: 1;
-        margin-top: 20%;
+        margin-top: 32%;
     }
-    .ratingpop
-    {
+    .ratingpop {
         grid-column: 2;
         grid-row: 1;
-        margin-top: 33%;
+        margin-top: 70%;
+
     }
-/* ----------------------------------------------------------------------------------------------------------------------
-parametrage div activite via fonction flexbox*/
-    .titre3
-    {
+    /* ----------------------------------------------------------------------------------------------------------------------
+    parametrage div activite via fonction flexbox*/
+    .titre3 {
         width: 100%;
     }
-    #activites
-    {
+    #activites {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        align-content: baseline;
-        margin-bottom: 1%;
-        
+        margin-bottom: 1%;   
     }
-    .activite1
-    {
+    #activites h3 {
+        padding-left: 2%;
+        margin-bottom: 0.5em;
+    }
+    .activite1 {
         border-radius: 20px;
         width: 24%;
-        box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px #6e6969;
     }
-
-    .activite1 img
-    {
+    .activite1 img {
         width: 100%;
         height: 520px;
         overflow: hidden;
         object-fit: cover;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        
     }
-    .activite2
-    {
+    .activite2 {
         width: 24%;
         border-radius: 30px;
-        box-shadow: 0 8px 6px -6px black;
-
+        box-shadow: 0 8px 6px -6px #6e6969;
     }
-    .activite2 img
-    {
+    .activite2 img {
         width: 100%;
         height: 228px;
         overflow: hidden;
         object-fit: cover;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        
     }
-    .titr_activite2
-    {
+    .titr_activite2 {
         overflow: hidden;
         border-radius: 30px;
-        box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px #6e6969;
         padding-bottom: 1em;
     }
-/* --------------------------------------------------------------------------------------------------------------
-parametrage footer via fonction flex box*/
-    footer
-    {
+    /* --------------------------------------------------------------------------------------------------------------
+    parametrage footer via fonction flex box*/
+    footer {
         display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding-right: 18%;
+        align-content: flex-end;
         background-color: #F2F2F2;
     }
-    .footreservia h2, ul
-    {
-        padding-left: 1em;
+    .footreservia {
+        width: 30%;
+        align-self: flex-start;
+        align-items: stretch;
+    }
+    .footreservia h2  {
+        padding-inline-start: 2%;
+    }
+    ul {
+        padding-left: 2%;
     }
 /*--------------------------------------------------------------------------------------------------------------------
 version mobile tous modèles*/
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1080px)
 {
-    #reservia
-    {
-        display: flex;
-        flex-flow: column;
+    /*-------parametrage body------------*/
+    #reservia {
         justify-content: center;
         font-size: 150%;
     }
-    header
-    {
-        display: grid;
-        grid-template-columns: 50% 50% ;
-        grid-template-rows: 150px 150px;
-        
+    header{
+        display: flex;
+        flex-wrap: wrap;
     }
-    #logo
-    {
-        width: 60%;
+    /*--------parametrage header------------*/
+    #logo img{
+        order: 1;
+        width: unset;
     }
-    nav 
-    {
-        display: unset;
+    li a:hover{
+        border-top: unset;
+        border-bottom: 0px solid;
+        padding-top: unset;
     }
-    nav li a [href="#liste_hebergements"]
-    {
-        grid-area: 2/1;
+    #nav1{
+        margin-left: unset;
+        order:3;
+        padding-left: 15%;
+        padding-right: 15%;
     }
-    nav li a [href="#activites"]
-    {
-        grid-area: 2/2;
+    #nav1:hover{
+        border-bottom: 2px solid;
+        border-color: #0065FC;
+        color: #0065FC;
+        padding-bottom: 0.5em;
     }
-    nav li a [href="inscrire"]
-    {
-        grid-area: 1/2;
+    #nav2{
+        order: 4;
+        padding-left: 15%;
+        padding-right: 15%;
     }
-    .topnav button
-    {
+    #nav2:hover{
+        border-bottom: 2px solid;
+        border-color: #0065FC;
+        color: #0065FC;
+        padding-bottom: 0.5em;
+    }
+    #nav3{
+        order: 2;
+        margin: 10%;
+        font-weight: bold;
+    }
+    /*----------parametrage fonction recherche-----------*/
+    .topnav button {
         display: none;
     }
-    .fa-search
-    {
+    .fa-search {
         display: inline;
-
     }
-    .filtres
-    {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto;
+    .fa-search::before {
+        background: #DEEBFF;
+        padding: 13px;
+        color: #0065FC;
+        border-color: #DEEBFF;
+        border-radius: 30px;
+        margin-right: 0.5em;
     }
-    #partie1
-    {
+    .filtres {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .filtres button {
+        font-weight: 1em;
+    }
+    .filtres h2 {
+        width: 100%;
+    }
+    #eco {
+        margin-right: 30%;
+    }
+    #famille{
+        margin-right: 30%;
+    }
+    #romantique{
+        margin-right: 70%;
+    }
+    #animaux{
+        margin-right: 70%;
+    }
+    #partie1 {
         margin-top: 1%;
         display: flex;
         flex-direction: column;
     }
-    #liste_hebergements
-    {
+    /*-------------parametrage div hebergements------------------*/
+    #liste_hebergements {
+        order: 2;
         display: flex;
         flex-direction: column;
-        align-items: center;
         height: auto;
         width: 100%;
         background-color: white;
         border-radius: 30px;
     }
-    .hebergements
-    {
+    .hebergements {
         width: 100%;
-        height: 330px;
+        height: 360px;
         border-radius: 30px;
-        box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px #6e6969;
     }
-    .hebergements img
-    {
+    .hebergements h2 {
+        margin-bottom: 0%;
+    }
+    .rating {
+        padding-top: 1%;
+        padding-left: 2%;
+    }
+    .hebergements img {
         width: 100%;
         height: 220px; 
     }
-    .populaires
-    {
+    /*---------------------parametrage div populaire-----------------*/
+    .populaires {
+        order: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -483,39 +477,34 @@ version mobile tous modèles*/
         background-color: #F2F2F2;
         border-radius: 30px;
     }
-    .populaire
-    {
+    .ratingpop {
+        margin-top: 25%;
+    }
+    .populaire {
         width: 95%;
         height: fit-content;
     }
-    .populaire h2
-    {
+    .populaire h2 {
         margin-top: 8%; 
     }
-    .populaire p
-    {
+    .populaire p {
         margin-top: 15%;
     }
-    #activites
-    {
+    /*---------------parametrage div activite -----------------*/
+    #activites {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        
-        
     }
-    .activite1
-    {
+    .activite1 {
         border-radius: 20px;
-        width: 85%;
-        box-shadow: 0 8px 6px -6px black;
+        width: 100%;
+        box-shadow: 0 8px 6px -6px #6e6969;
         margin-bottom: 1em;
     }
-
-    .activite1 img
-    {
+    .activite1 img {
         width: 100%;
         height: 250px;
         overflow: hidden;
@@ -523,31 +512,27 @@ version mobile tous modèles*/
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
     }
-    .activite2
-    {
-        width: 85%;
+    .activite2 {
+        width: 100%;
         margin-bottom: 1em;
     }
-    .activite2 img
-    {
+    .activite2 img {
         width: 100%;
         height: 250px;
         overflow: hidden;
         object-fit: cover;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        
     }
-    footer
-    {
+    /*-------------------------parametrage footer-------------------------*/
+    footer {
         display: flex;
         flex-direction: column;
         padding-right: 0%;
         height: auto;
         width: 100%;
     }
-    .footreservia
-    {
+    .footreservia {
         width: 85%;
         align-self: center;
         align-items: stretch;

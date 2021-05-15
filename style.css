@@ -344,6 +344,11 @@
     ul {
         padding-left: 2%;
     }
+    .footreservia li a:hover{
+        border-top: unset;
+        border-bottom: 0px solid;
+        padding-top: unset;
+    }
 /*--------------------------------------------------------------------------------------------------------------------
 version mobile tous modèles*/
 @media screen and (max-width: 1080px)

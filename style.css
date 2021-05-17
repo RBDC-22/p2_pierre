@@ -275,7 +275,7 @@
     .ratingpop {
         grid-column: 2;
         grid-row: 1;
-        margin-top: 55%;
+        margin-top: 75%;
 
     }
     /* ----------------------------------------------------------------------------------------------------------------------
@@ -292,6 +292,7 @@
     }
     #activites h3 {
         padding-left: 2%;
+        padding-bottom: 0.5em;
         margin-bottom: 0.5em;
     }
     .activite1 {
@@ -324,7 +325,6 @@
         overflow: hidden;
         border-radius: 30px;
         box-shadow: 0 8px 6px -6px #6e6969;
-        padding-bottom: 1em;
     }
     /* --------------------------------------------------------------------------------------------------------------
     parametrage footer via fonction flex box*/
@@ -356,7 +356,7 @@ version mobile tous modèles*/
     /*-------parametrage body------------*/
     #reservia {
         justify-content: center;
-        font-size: 150%;
+        font-size: 190%;
     }
     header{
         display: flex;
@@ -375,8 +375,8 @@ version mobile tous modèles*/
     #nav1{
         margin-left: unset;
         order:3;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     #nav1:hover{
         border-bottom: 2px solid;
@@ -386,8 +386,8 @@ version mobile tous modèles*/
     }
     #nav2{
         order: 4;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     #nav2:hover{
         border-bottom: 2px solid;
@@ -417,27 +417,30 @@ version mobile tous modèles*/
     }
     .filtres {
         width: 100%;
+        height: 520px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        align-content: stretch;
     }
     .filtres button {
-        font-weight: 1em;
+        margin-left: 10em;
+        transform: scale(2.5);
     }
     .filtres h2 {
         width: 100%;
     }
     #eco {
-        margin-right: 30%;
+        margin-right: 20%;   
     }
     #famille{
-        margin-right: 30%;
+        margin-right: 20%;
     }
     #romantique{
-        margin-right: 70%;
+        margin-right: 50%;
     }
     #animaux{
-        margin-right: 70%;
+        margin-right: 50%;
+        margin-left: 9em;
     }
     #partie1 {
         margin-top: 1%;
@@ -468,9 +471,9 @@ version mobile tous modèles*/
     }
     .hebergements p {
         padding-left: 2%;
+        margin-bottom: unset;
     }
     .rating {
-        padding-top: 1%;
         padding-left: 2%;
     }
     
@@ -489,18 +492,20 @@ version mobile tous modèles*/
         background-color: #F2F2F2;
         border-radius: 30px;
     }
+    .populaire img {
+        height: 12em;
+    }
     .ratingpop {
-        margin-top: 25%;
+        margin-top: 60%;
     }
     .populaire {
         width: 95%;
-        height: fit-content;
     }
     .populaire h2 {
         margin-top: 8%; 
     }
     .populaire p {
-        margin-top: 15%;
+        margin-top: 30%;
     }
     /*---------------parametrage div activite -----------------*/
     #activites {

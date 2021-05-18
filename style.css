@@ -237,6 +237,7 @@
         grid-template-columns: 40% 55%;
         grid-gap: 10px;
         width: 80%;
+        height: fit-content;
         background-color: white;
         border-radius: 30px;
         margin-bottom: 1.5%;
@@ -269,7 +270,7 @@
     .ratingpop {
         grid-column: 2;
         grid-row: 1;
-        margin-top: 65%;
+        margin-top: 70%;
     }
     /* --------------------------parametrage div activite via fonction flexbox----------------------------------*/
     .titre3 {

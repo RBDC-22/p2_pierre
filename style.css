@@ -8,8 +8,7 @@
         display: flex;
         flex-direction: column;
     }
-    /* -------------------------------------------------------------------------------------------------------------------
-    parametrage header via fonction flexboxet grid */
+    /* -----------------------------parametrage header via fonction flexboxet----------------*/
     header{
         display: inline-flex;
         justify-content: space-between;
@@ -30,8 +29,7 @@
     #nav1{
         margin-left: 45%;
     }
-        /* -------------------------------------------------------------------------------------------------------------------
-    parametrage fonction recherche  via fonction flexbox*/
+        /* --------------------------parametrage fonction recherche  via fonction flexbox---------*/
     .titre_secondaire {
         margin-top: 1em;
         display: flex;
@@ -126,8 +124,7 @@
         border-style: solid 2px ;
         margin-right: 0.5em;
     }
-    /* -----------------------------------------------------------------------------------------------
-    parametrage taille police boutons*/
+    /* -------------------------------------- parametrage taille police boutons-------------------*/
     h1 {
         font-size: 1.2em;
         font-weight: bold;
@@ -156,15 +153,13 @@
         padding-right: 0.7em;
         margin-bottom: 0.5em;
     }
-    /* -----------------------------------------------------------------------------------------------
-    parametrage div hebergement de *ville* / div populaires via fonction flexbox*/
+    /* --------------------------parametrage div hebergement de *ville* / div populaires via fonction flexbox-------------------*/
     #partie1 {
         margin-top: 1em;
         display: flex;
         justify-content: space-between;
     } 
-    /* ---------------------------------------------------------------------------------------------------
-    parametrage gestion div hebergements via fonction flex box*/
+    /* ---------------------------parametrage gestion div hebergements via fonction flex box----------------------------------*/
     .titre1 {
         margin-left: 5%;
         display: flex;
@@ -221,8 +216,7 @@
     .rating {
         padding-left: 5%;
     }
-    /*------------------------------------------------------------------------------------------------------------
-    parametrage gestion div populaires via fonction grid*/
+    /*----------------------------------------parametrage gestion div populaires via fonction grid------------------------------*/
     .titre2 {
         width: 80%;
         display: flex;
@@ -278,8 +272,7 @@
         margin-top: 75%;
 
     }
-    /* ----------------------------------------------------------------------------------------------------------------------
-    parametrage div activite via fonction flexbox*/
+    /* --------------------------parametrage div activite via fonction flexbox----------------------------------*/
     .titre3 {
         width: 100%;
     }
@@ -326,8 +319,7 @@
         border-radius: 30px;
         box-shadow: 0 8px 6px -6px #6e6969;
     }
-    /* --------------------------------------------------------------------------------------------------------------
-    parametrage footer via fonction flex box*/
+    /* ----------------------------------parametrage footer via fonction flex box--------------------------*/
     footer {
         display: flex;
         align-content: flex-end;
@@ -349,8 +341,7 @@
         border-bottom: 0px solid;
         padding-top: unset;
     }
-/*--------------------------------------------------------------------------------------------------------------------
-version mobile tous modèles*/
+/*--------------------------version mobile tous modèles------------------------------*/
 @media screen and (max-width: 1080px)
 {
     /*-------parametrage body------------*/

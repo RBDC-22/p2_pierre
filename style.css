@@ -1,9 +1,7 @@
     /* -------------------------------------------------------------------------------------------------------------------
     appel des fonctions de pour le corps */
-    body{
+    body {
         font-family: 'Raleway', sans-serif;
-    }
-    #reservia{
         padding: 0 30px 10px 30px;
         display: flex;
         flex-direction: column;
@@ -177,14 +175,12 @@
         width: 100%;
     }
     .hebergements{   
-        display: inline-block;
         align-content: center;
         margin-bottom: 1.5%;
         height: auto;
         width: 27%;
         background-color: white;
         border-radius: 30px;
-        border-radius: 20px;
         box-shadow: 0 8px 6px -6px rgb(78, 77, 77);
     }
     .hebergements img {
@@ -330,7 +326,7 @@
         align-self: flex-start;
         align-items: stretch;
     }
-    .footreservia h2  {
+    .footreservia h2 {
         padding-inline-start: 2%;
     }
     ul {
@@ -345,7 +341,7 @@
 @media screen and (max-width: 1080px)
 {
     /*-------parametrage body------------*/
-    #reservia {
+    body {
         justify-content: center;
         font-size: 190%;
     }

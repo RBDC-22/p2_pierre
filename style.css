@@ -337,8 +337,9 @@
         border-bottom: 0px solid;
         padding-top: unset;
     }
-/*--------------------------version mobile tous modèles------------------------------*/
-@media screen and (max-width: 1080px)
+/*------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------version mobile tous modèles------------------------------*/
+@media screen and (max-width: 980px)
 {
     /*-------parametrage body------------*/
     body {

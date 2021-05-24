@@ -15,10 +15,10 @@
     #logo img {
         width: 50%;
         }
-    li a{
+    ul a{
         margin-right: 1em;
     }
-    li a:hover {
+    ul a:hover {
         border-top: 2px solid;
         border-color: #0065FC;
         color: #0065FC;
@@ -79,7 +79,7 @@
     }
     .fa-money-bill-wave-alt:before {
         background: #DEEBFF;
-        padding: 10px;
+        padding: 13px;
         color: #0065FC;
         border-color: #DEEBFF;
         border-radius: 30px;

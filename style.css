@@ -343,7 +343,7 @@
     /*-------parametrage body------------*/
     body {
         justify-content: center;
-        font-size: 190%;
+        font-size: 200%;
     }
     header{
         display: flex;
@@ -386,6 +386,9 @@
         order: 2;
         margin: 10%;
         font-weight: bold;
+    }
+    .titre_secondaire h1 {
+        font-size: 2em;
     }
     /*----------parametrage fonction recherche-----------*/
     .topnav button {
@@ -439,14 +442,13 @@
         order: 2;
         display: flex;
         flex-direction: column;
-        height: auto;
         width: 100%;
         background-color: white;
         border-radius: 30px;
     }
     .hebergements {
         width: 100%;
-        height: 360px;
+        height: 380px;
         border-radius: 30px;
         box-shadow: 0 8px 6px -6px #6e6969;
     }

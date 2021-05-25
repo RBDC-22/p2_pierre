@@ -1,7 +1,7 @@
     /* -------------------------------------------------------------------------------------------------------------------
     appel des fonctions de pour le corps */
     body {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Raleway';
         padding: 0 30px 10px 30px;
         display: flex;
         flex-direction: column;
@@ -355,7 +355,7 @@
         order: 1;
         width: unset;
     }
-    li a:hover{
+    ul a:hover{
         border-top: unset;
         border-bottom: 0px solid;
         padding-top: unset;

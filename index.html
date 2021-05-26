@@ -4,48 +4,50 @@
         <meta charset="utf-8" />
         <link href="./fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <title>Reservia</title>
     </head>
 
     <body>
                 <header>
                     <div id="logo">
-                        <img src="logo/reservia1.png"/>
+                        <img src="logo/reservia1.png" alt=""/>
                     </div>
 
-                    <div id="nav1">
-                            <ul><a href="#liste_hebergements">Hébergements</a></ul>
-                    </div>
-                    <div id="nav2">
-                            <ul><a href="#activites">Activités</a></ul>
-                    </div>
-                    <div id="nav3">
-                            <ul><a href='test.html' style="color: #0065FC">S'inscrire </a></ul>
-                    </div>
+                    <ol id="nav1">
+                            <li><a href="#liste_hebergements">Hébergements</a></li>
+                    </ol>
+                    <ol id="nav2">
+                            <li><a href="#activites">Activités</a></li>
+                    </ol>
+                    <ol id="nav3">
+                            <li><a href='test.html' style="color: #0065FC">S'inscrire </a></li>
+                    </ol>
                 </header>
 
-                <div class="titre_secondaire">
+                <div class="titre_principal">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
 
                 <div class="topnav">
                     <i class="fas fa-map-marker-alt"></i> <input type="text" placeholder="Marseille,France">
-                    <button type="submit">Rechercher</i></button><i type="submit" class="fas fa-search"></i>
+                    <button type="submit">Rechercher</button><i type="submit" class="fas fa-search"></i>
                 </div>
 
-                <div class="filtres">
+                <nav>
                     <h2>Filtres</h2> 
                         <button id="eco"><i class="fas fa-money-bill-wave-alt"></i>Économique</button>
                         <button id="famille"><i class="fas fa-child"></i>Familial</button>
                         <button id="romantique"><i class="fas fa-heart"></i>Romantique</button>
                         <button id="animaux"><i class="fas fa-dog"></i>Animaux</button>
-                </div>
+                </nav>
 
                 <div id="informations">
                     <i class="fas fa-info-circle"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
-                    <div id="partie1">
+                    <section>
                         <div id ="liste_hebergements">
                             <div class="titre1" onclick="location.href='test.html';" style="cursor: pointer;">
                                 <h2>Hébergements à Marseille</h2>
@@ -141,13 +143,13 @@
                                 
                             </div>
                         </div>
-                    </div>
+                    </section>
 
                     <div class="titre3">
                         <h2>Activités à Marseille</h2>
                     </div>
                 
-                    <div id="activites">
+                    <main>
                         
                         <div class="activite1">
                             <img src="activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
@@ -169,7 +171,7 @@
                             <img src="activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" onclick="location.href='test.html';" style="cursor: pointer;">
                             <h3>Parc Longchamp</h3>
                         </div>
-                    </div>
+                    </main>
 
                 <footer>
                     <div class="footreservia">

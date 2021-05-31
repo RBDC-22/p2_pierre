@@ -353,7 +353,8 @@
     /*-------parametrage body------------*/
     body {
         justify-content: center;
-        font-size: 70%;
+        font-size: 90%;
+        padding: unset;
     }
     header{
         display: flex;
@@ -363,6 +364,7 @@
     #logo{
         order: 1;
         width: 50%;
+        padding-left: 1rem;
     }
     li a:hover{
         border-top: unset;
@@ -394,8 +396,8 @@
     }
     #nav3{
         order: 2;
-        margin: 10%;
         font-weight: bold;
+        padding-right: 2em;
     }
     .titre_principal h1 {
         font-size: 2em;
@@ -425,10 +427,10 @@
         width: 100%;
     }
     #eco {
-        margin-right: 20%; 
+        margin-right: 5%; 
     }
     #famille{
-        margin-right: 20%;
+        margin-right: 10%;
     }
     #romantique{
         margin-right: 50%;

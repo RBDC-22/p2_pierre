@@ -348,11 +348,12 @@
     }
 /*------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------version mobile tous modèles------------------------------*/
-@media screen and (max-width: 980px)
+@media screen and (max-device-width: 880px)
 {
     /*-------parametrage body------------*/
     body {
         justify-content: center;
+        font-size: 70%;
     }
     header{
         display: flex;

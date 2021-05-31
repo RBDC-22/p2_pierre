@@ -244,17 +244,17 @@
         grid-template-columns: 40% 55%;
         grid-gap: 10px;
         width: 80%;
-        height: fit-content;
+        height: 33%;
         background-color: white;
         border-radius: 30px;
-        margin-bottom: 1.5%;
+        margin-bottom: 1em;
         box-shadow: 0 8px 6px -6px #6e6969;
     }
     .populaire img {
         grid-column: 1;
         grid-row: 1;
         width: 100%;
-        height: 170px;
+        height: 95%;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
         border: 5px;
@@ -303,7 +303,7 @@
     }
     .activite1 img {
         width: 100%;
-        height: 520px;
+        height: 420px;
         overflow: hidden;
         object-fit: cover;
         border-top-left-radius: 30px;
@@ -316,7 +316,7 @@
     }
     .activite2 img {
         width: 100%;
-        height: 233px;
+        height: 180px;
         overflow: hidden;
         object-fit: cover;
         border-top-left-radius: 30px;
@@ -334,9 +334,7 @@
         background-color: #F2F2F2;
     }
     .footreservia {
-        width: 30%;
-        align-self: flex-start;
-        align-items: stretch;
+        width: 33%;
     }
     .footreservia h2 {
         padding-inline-start: 2%;
@@ -447,24 +445,23 @@
     #animaux{
         margin-right: 50%;
     }
+    /*------------------parametrage hebergement x pop ---------------*/
     section {
         margin-top: 1%;
         display: flex;
         flex-direction: column;
     }
-    
     /*-------------parametrage div hebergements------------------*/
     #liste_hebergements {
         order: 2;
-        display: flex;
-        flex-direction: column;
         width: 100%;
+        align-items: center;
         background-color: white;
         border-radius: 30px;
     }
     .hebergements {
-        width: 100%;
-        height: fit-content;
+        width: 95%;
+        height: 16%;
         border-radius: 30px;
         box-shadow: 0 8px 6px -6px #6e6969;
     }
@@ -484,33 +481,30 @@
     
     .hebergements img {
         width: 100%;
-        height: 220px; 
     }
     /*---------------------parametrage div populaire-----------------*/
     .populaires {
         order: 1;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 100%;
         background-color: #F2F2F2;
         border-radius: 30px;
-    }
-    .populaire img {
-        height: 12em;
     }
     .ratingpop {
         margin-top: 85%;
     }
     .populaire {
         width: 95%;
+        height: 200px;
     }
     .populaire h2 {
-        margin-top: 8%; 
+        margin-top: 10%; 
     }
     .populaire p {
-        margin-top: 30%;
+        margin-top: 40%;
     }
     /*---------------parametrage div activite -----------------*/
     main {
@@ -528,7 +522,7 @@
     }
     .activite1 img {
         width: 100%;
-        height: 250px;
+        height: 180px;
         overflow: hidden;
         object-fit: cover;
         border-top-left-radius: 30px;
@@ -540,7 +534,7 @@
     }
     .activite2 img {
         width: 100%;
-        height: 250px;
+        height: 180px;
         overflow: hidden;
         object-fit: cover;
         border-top-left-radius: 30px;

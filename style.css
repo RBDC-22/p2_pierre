@@ -353,16 +353,15 @@
     /*-------parametrage body------------*/
     body {
         justify-content: center;
-        font-size: 200%;
     }
     header{
         display: flex;
         flex-wrap: wrap;
     }
     /*--------parametrage header------------*/
-    #logo img{
+    #logo{
         order: 1;
-        width: unset;
+        width: 50%;
     }
     li a:hover{
         border-top: unset;
@@ -417,20 +416,15 @@
     }
     nav {
         width: 100%;
-        height: 520px;
         display: flex;
         flex-wrap: wrap;
         align-content: stretch;
-    }
-    nav button {
-        margin-left: 10em;
-        transform: scale(2.5);
     }
     nav h2 {
         width: 100%;
     }
     #eco {
-        margin-right: 20%;   
+        margin-right: 20%; 
     }
     #famille{
         margin-right: 20%;
@@ -440,7 +434,6 @@
     }
     #animaux{
         margin-right: 50%;
-        margin-left: 9em;
     }
     section {
         margin-top: 1%;
@@ -459,7 +452,7 @@
     }
     .hebergements {
         width: 100%;
-        height: 380px;
+        height: fit-content;
         border-radius: 30px;
         box-shadow: 0 8px 6px -6px #6e6969;
     }

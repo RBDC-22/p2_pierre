@@ -1,7 +1,7 @@
     /* -------------------------------------------------------------------------------------------------------------------
     appel des fonctions de pour le corps */
     body {
-        padding: 0 70px 10px 70px;
+        padding: 0 70px 0px 70px;
         display: flex;
         flex-direction: column;
         font-family: 'Raleway', sans-serif;
@@ -22,7 +22,7 @@
         border-top: 2px solid;
         border-color: #0065FC;
         color: #0065FC;
-        padding-top: 2em;
+        padding-top: 2.6rem;
     }
     #nav1 {
         margin-left: 45%;
@@ -141,7 +141,7 @@
         font-weight: bold;
     } 
     h3 {
-        font-size: 1.1em;
+        font-size: 1em;
         margin-bottom: unset;
     }
     li {
@@ -242,7 +242,7 @@
         grid-template-columns: 40% 55%;
         grid-gap: 10px;
         width: 80%;
-        height: 25%;
+        height: 28%;
         background-color: white;
         border-radius: 30px;
         margin-bottom: 1em;

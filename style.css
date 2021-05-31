@@ -353,13 +353,13 @@
     /*-------parametrage body------------*/
     body {
         justify-content: center;
-        font-size: 90%;
         padding: unset;
     }
     header{
         display: flex;
         flex-wrap: wrap;
     }
+    
     /*--------parametrage header------------*/
     #logo{
         order: 1;
@@ -398,9 +398,6 @@
         order: 2;
         font-weight: bold;
         padding-right: 2em;
-    }
-    .titre_principal h1 {
-        font-size: 2em;
     }
     /*----------parametrage fonction recherche-----------*/
     .topnav button {
@@ -492,7 +489,7 @@
         height: 12em;
     }
     .ratingpop {
-        margin-top: 75%;
+        margin-top: 85%;
     }
     .populaire {
         width: 95%;

@@ -374,7 +374,7 @@
     #nav1{
         margin-left: unset;
         order:3;
-        width: 39%;
+        width: 36%;
         padding-bottom: 0.5em;
         border-color: #F2F2F2;
         border-style: solid;
@@ -390,7 +390,7 @@
     }
     #nav2{
         order: 4;
-        width: 39%;
+        width: 36%;
         padding-bottom: 0.5em;
         border-color: #F2F2F2;
         border-style: solid;

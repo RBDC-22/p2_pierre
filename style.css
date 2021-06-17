@@ -366,6 +366,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding-right: 5%;
     }
     /*--------parametrage header------------*/
     #logo{
@@ -486,10 +487,10 @@
         margin-bottom: 0%;
     }
     .hebergements h3 {
-        padding-left: 2%;
+        padding-left: 4%;
     }
     .hebergements p {
-        padding-left: 2%;
+        padding-left: 4%;
         margin-bottom: unset;
     }
     .rating {
@@ -517,7 +518,7 @@
         width: 95%;
         height: 200px;
     }
-    .populaire h2 {
+    .populaire h3 {
         margin-top: 10%; 
     }
     .populaire p {

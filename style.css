@@ -356,7 +356,7 @@
     }
 /*------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------version mobile tous modèles------------------------------*/
-@media screen and (max-device-width: 760px)
+@media screen and (max-device-width: 870px)
 {
     /*-------parametrage body------------*/
     body {
@@ -516,7 +516,7 @@
     }
     .populaire {
         width: 95%;
-        height: 200px;
+        height: 220px;
     }
     .populaire h3 {
         margin-top: 10%; 
@@ -575,6 +575,6 @@
 @media screen and (max-device-width: 570px)
 {
     .ratingpop {
-        margin-top: 80%;
+        margin-top: 95%;
     }
 }

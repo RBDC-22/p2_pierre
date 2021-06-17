@@ -512,7 +512,7 @@
         border-radius: 30px;
     }
     .ratingpop {
-        margin-top: 75%;
+        margin-top: 70%;
     }
     .populaire {
         width: 95%;
@@ -570,5 +570,11 @@
         width: 85%;
         align-self: center;
         align-items: stretch;
+    }
+}
+@media screen and (max-device-width: 570px)
+{
+    .ratingpop {
+        margin-top: 80%;
     }
 }

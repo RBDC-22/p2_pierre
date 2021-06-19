@@ -170,6 +170,7 @@
     section {
         margin-top: 1em;
         display: flex;
+        align-content: space-between;
         
     } 
     /* ---------------------------parametrage gestion div hebergements via fonction flex box----------------------------------*/
@@ -483,6 +484,9 @@
         border-radius: 30px;
         box-shadow: 0 8px 6px -6px #6e6969;
     }
+    .hebergements {
+        transform: scale(2);
+      }
     .hebergements h2 {
         margin-bottom: 0%;
     }

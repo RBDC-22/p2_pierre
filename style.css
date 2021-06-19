@@ -434,6 +434,7 @@
     }
     /*----------parametrage fonction recherche-----------*/
     .topnav{
+        padding-left: 2em;
         justify-content: center;
         transform: scale(1.3);
     }

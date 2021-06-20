@@ -382,7 +382,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-right: 5%;
     }
     /*--------parametrage header------------*/
     #logo{

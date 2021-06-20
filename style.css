@@ -434,9 +434,10 @@
     /*----------parametrage fonction recherche-----------*/
     .topnav{
         justify-content: center; 
+        padding-left: 2rem;
     }
     input[type="text" i]{
-        width: 95%;
+        width: 97%;
     }
     .topnav button {
         display: none;
